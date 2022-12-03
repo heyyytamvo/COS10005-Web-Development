@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+	<meta name="description" content="Web Development" />
+	<meta name="keywords" content="Coffee Website" />
+	<meta name="author" content="Thanh Tam Vo" />
+	<!-- (1) CSS reference-->
+	<link rel="stylesheet" href="css/index_style.css">
+	<!-- (2) Javascript reference-->
+	<script src="js/index.js"></script>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
+	<title>Dreamy Coffee</title>
+</head>
+
+<body>    
+    <!-- (3) Navigation bar -->
+    <div class="navigationBar">
+        <div class="menu-wrap">
+            <a href="#home" class="logo">
+                <div>
+                    DREAMY
+                </div>
+            </a>
+            <div class="menuNav">
+                <a href="#home">
+                    <div class="nav-item active">
+                        HOME
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="nav-item">
+                        ABOUT
+                    </div>
+                </a>
+                <a href="#menu">
+                    <div class="nav-item">
+                        MENU
+                    </div>
+                </a>
+                <a href="register.html">
+                    <div class="nav-item">
+                        REGISTER
+                    </div>
+                </a>
+
+                <a href="order.html">
+                    <div class="nav-item">
+                        ORDER
+                    </div>
+                </a>
+
+                <a href="features.html">
+                    <div class="nav-item">
+                        FEATURES
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!---->
+    
+<!-- (4) Home-->
+    <section id="home">
+        <div class="content_container">
+            <h1>We don't make coffee. We make your day.</h1>
+
+            <div class="bio">
+                <h3>Find yourself a festive flavour, then listen out for the door…</h3>
+                <div class="moreInfo">
+                    <p>Whether you're sipping solo or hosting guests, enjoying coffee at home should be a relaxing, soothing and soulful experience.</p>
+                    <p>With so many options to choose from, it's difficult to find that perfect cup.</p>
+                </div>
+            </div>
+
+            <a href="#menu">Menu</a>      
+        </div>
+    </section>
+<!---->
+    
+<!-- (5) About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="content_container">
+            <div class="AboutDescription aboutColumn">
+
+                <p>Established since the 80's, Dreamy Coffee has provided millions of customers with beverages worldwide. And Dreamy is dedicated to taking care of each individual consumer one at a time.</p>
+
+                <p>Dreammy Coffee is committed to this connection from our respect – we are committed to serving the best quality coffee, creating a connection to each customer and fulfilling our responsibilities to the community.</p>
+            </div>
+
+            <div class="Statistic aboutColumn">
+                <div class="block">
+                    <div class="numberWrapper numscroller numscroller-big-bottom" data-slno='1' data-min='0' data-max='72' data-delay='2' data-increment="1">0</div>
+                    <div class="descNumb">Number of countries that we are operating in</div>
+                </div>
+
+                <div class="block">
+                    <div class="numberWrapper numscroller numscroller-big-bottom" data-slno='1' data-min='0' data-max='42388' data-delay='6' data-increment="75">0</div>
+                    <div class="descNumb">Number of stores worldwide</div>
+                </div>
+
+                <div class="block">
+                    <div class="numberWrapper numscroller numscroller-big-bottom" data-slno='1' data-min='0' data-max='1' data-delay='1' data-increment="1">0</div>
+                    <div class="descNumb">Our mission to inspire and nurture the human spirit – one person, one cup, and one neighbourhood at a time.</div>
+                </div>
+            </div>
+
+            <div class="oldPics aboutColumn">
+                <img src="pictures/oldShop.webp" alt="oldShop" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+<!---->
+    
+<!-- (6) menu -->
+    <section id="menu">
+        <div class="content_container">
+            <div class="beverage-menu">
+                <div class="category">
+                    <div class="zoom">
+                        <button class="active" data-type="all">
+                            All
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-type="espresso">
+                            Espresso
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-type="frappuccino">
+                            Frappuccino
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-type="tea">
+                            Tea
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-type="cake">
+                            Cakes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="beverage-items-wrap all">
+                    <!-- Espresso -->
+                    <div class="column espresso">
+                        <div class="card">
+                            <img src="pictures/HazelnutMacchiato.png" alt=""> 
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Hazelnut Macchiato
+                                    </h3>
+                                    <span>
+                                        $3.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column espresso">
+                        <div class="card">
+                            <img src="pictures/IcedCaramelMacchiato.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Iced Caramel Macchiato
+                                    </h3>
+                                    <span>
+                                        $4.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column espresso">
+                        <div class="card">
+                            <img src="pictures/Americano.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Caffe Americano
+                                    </h3>
+                                    <span>
+                                        $2.65
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column espresso">
+                        <div class="card">
+                            <img src="pictures/Latte.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Cafe Latte
+                                    </h3>
+                                    <span>
+                                        $2.95
+                                    </span>
+                                </div>    
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column espresso">
+                        <div class="card">
+                            <img src="pictures/Espresso.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Espresso
+                                    </h3>
+                                    <span>
+                                        $3.00
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                    <!-- Espresso -->
+                
+                    <!-- Frappuccino -->
+                    <div class="column frappuccino">
+                        <div class="card">
+                            <img src="pictures/Frappuccino.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Coffee Frappuccino
+                                    </h3>
+                                    <span>
+                                        $3.95
+                                    </span>
+                                </div> 
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column frappuccino">
+                        <div class="card">
+                            <img src="pictures/EspressoFrappuccino.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Espresso Frappuccino
+                                    </h3>
+                                    <span>
+                                        $4.15
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column frappuccino">
+                        <div class="card">
+                            <img src="pictures/CaramelFrappuccino.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Caramel Frappuccino
+                                    </h3>
+                                    <span>
+                                        $4.65
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                    <!-- Frappuccino -->
+                
+                    <!-- Tea -->
+                    <div class="column tea">
+                        <div class="card">
+                            <img src="pictures/EnglishBreakfastTea.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        English Breakfast Tea
+                                    </h3>
+                                    <span>
+                                        $2.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column tea">
+                        <div class="card">
+                            <img src="pictures/ChaiTeaLatte.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Chai Tea Latte
+                                    </h3>
+                                    <span>
+                                        $1.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column tea">
+                        <div class="card">
+                            <img src="pictures/MintBlend.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Mint Blend
+                                    </h3>
+                                    <span>
+                                        $2.65
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                    <!-- Tea -->
+                
+                    <!-- Cakes -->
+                    <div class="column cake">
+                        <div class="card">
+                            <img src="pictures/EspressoRoastBlondie.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Espresso Roast Blondie
+                                    </h3>
+                                    <span>
+                                        $4.00
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="column cake">
+                        <div class="card">
+                            <img src="pictures/ChocolateCaramelShortbread.png" alt="">
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Chocolate Caramel Shortbread
+                                    </h3>
+                                    <span>
+                                        $3.50
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="orderButton"><a href="order.html">ORDER</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cakes -->
+            </div>
+        </div>
+    </section>
+<!---->
+    
+    
+<!-- (7) Footer -->
+    <section class="footer">
+        <h3>Contact Details</h3>
+        <div class="content_container">
+            <div class="row">
+                <div class="content_footer">
+                    <p class="info"><span>Email</span> <br> coffee@dreamy.com</p>
+                    <p class="info"><span>Phone number</span> <br> +61 1300 794 628</p>
+                    <p class="info"><span>Website</span> <br> dreamycoffee.com</p>
+                    <p class="info"><span>Address</span> <br> John St, Hawthorn VIC 3122, Australia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->
+    
+</body>
+</html>

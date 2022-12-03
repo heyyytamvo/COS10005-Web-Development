@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/*video background*/
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+
+}
+
+/*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+}
+/*---------main page------------*/
+
+section{
+    margin: 20px;
+}
+/*set color and spacing for h1*/
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+/*set position and size for table*/
+table{
+    margin: auto;
+    width: 1000px;
+    color: white;
+    border-collapse: collapse;
+}
+
+/*set color,size and center header cell */
+th{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*set csize color and center data cell*/
+td{
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.notOct{
+    color: #6E6E6E;
+}
+
+
+
+th{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+td{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:640px){
+    /*video background*/
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+
+}
+
+/*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+}
+/*---------main page------------*/
+
+section{
+    margin: 20px;
+}
+/*set color and spacing for h1*/
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+/*set position and size for table*/
+table{
+    margin: auto;
+    width: 1000px;
+    color: white;
+    border-collapse: collapse;
+}
+
+/*set color,size and center header cell */
+th{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*set csize color and center data cell*/
+td{
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.notOct{
+    color: #6E6E6E;
+}
+
+
+
+th{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+td{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+}
+

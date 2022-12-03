@@ -1,0 +1,450 @@
+/*--------------font--------------*/
+@font-face {
+    font-family: 'Santana';
+    src: url('../font/Santana-Black.eot');
+    src: url('../font/Santana-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantana-Black.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantana-Black.woff') format('woff'),
+        url('../font/Santana-Black.eotSantana-Black.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantana-Black.svg#Santana-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Santana-BlackCondensed';
+    src: url('../font/Santana-Black.eotSantana-BlackCondensed.eot');
+    src: url('../font/Santana-Black.eotSantana-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantana-BlackCondensed.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantana-BlackCondensed.woff') format('woff'),
+        url('../font/Santana-Black.eotSantana-BlackCondensed.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantana-BlackCondensed.svg#Santana-BlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Santana';
+    src: url('../font/Santana-Black.eotSantana.eot');
+    src: url('../font/Santana-Black.eotSantana.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantana.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantana.woff') format('woff'),
+        url('../font/Santana-Black.eotSantana.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantana.svg#Santana') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Santana';
+    src: url('../font/Santana-Black.eotSantana-Bold.eot');
+    src: url('../font/Santana-Black.eotSantana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantana-Bold.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantana-Bold.woff') format('woff'),
+        url('../font/Santana-Black.eotSantana-Bold.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantana-Bold.svg#Santana-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SantanaXtraCondensed';
+    src: url('../font/Santana-Black.eotSantanaXtraCondensed.eot');
+    src: url('../font/Santana-Black.eotSantanaXtraCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantanaXtraCondensed.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantanaXtraCondensed.woff') format('woff'),
+        url('../font/Santana-Black.eotSantanaXtraCondensed.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantanaXtraCondensed.svg#SantanaXtraCondensed') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Santana-RegularCondensed';
+    src: url('../font/Santana-Black.eotSantana-RegularCondensed.eot');
+    src: url('../font/Santana-Black.eotSantana-RegularCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../font/Santana-Black.eotSantana-RegularCondensed.woff2') format('woff2'),
+        url('../font/Santana-Black.eotSantana-RegularCondensed.woff') format('woff'),
+        url('../font/Santana-Black.eotSantana-RegularCondensed.ttf') format('truetype'),
+        url('../font/Santana-Black.eotSantana-RegularCondensed.svg#Santana-RegularCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*--------------font--------------*/
+
+
+/*--------------whole page--------------*/
+body{
+    font-family: "Santana", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--------------whole page--------------*/
+
+/*--------------Navigation Bar--------------*/
+.navigationBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #006140;
+    box-shadow: rgba(3, 0, 0, 0.7) 0px 2px 8px 0px;
+}
+
+.menu-wrap {
+    max-width: 1366px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fffcfc;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.menuNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.menuNav a{
+    text-decoration: none;
+}
+
+.nav-item{
+    margin-left: 1rem;
+    padding: .5rem 1.5rem;
+    font-weight: 800;
+    font-size: 14px;
+    transition: .4s ease-in;
+    border-radius: 20px;
+    color: #fffcfc;
+    letter-spacing: .5px;
+}
+
+.nav-item:hover,
+.nav-item.active{
+    background-color: black;
+}
+/*--------------Navigation Bar--------------*/
+
+/*--------------home--------------*/
+#home{
+    background-image: url(../pictures/coffeeShop.png);
+    height: 100vh;
+}
+
+#home .content_container{
+    color: #fffcfc;
+    padding: 12rem 4rem 9rem 4rem;
+    font-weight: 300;
+    float: right;
+}
+
+#home .content_container h1{
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.bio{
+    letter-spacing: 1px;
+}
+
+.bio h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.bio .moreInfo{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#home .content_container a{
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: #fffcfc;
+    font-weight: 100;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    transition: .2s;
+    z-index: 0;
+}
+
+#home .content_container a:hover{
+    letter-spacing: .5px;
+    background-color: #006140;
+    border-color:#006140;
+}
+
+/*--------------home--------------*/
+
+/*--------------About Us--------------*/
+#about{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#about h2{
+    margin: 3rem 0rem 1rem 0rem;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 0px calc(4rem + 20px);;
+}
+
+#about .content_container{
+    margin: 0rem 4rem;
+    font-weight: 300;
+    display: block;
+    width:100%;
+    position: relative;
+}
+
+.aboutColumn {
+    padding: 0px 20px;
+    width: 30%;
+    float: left;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.AboutDescription{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+}
+.Statistic .block{
+    margin-block: 1em 0em;
+}
+
+.numberWrapper{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.descNumb{
+    margin-top: 2px;
+    margin-bottom: 2rem;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.oldPics{
+    margin-top: 4rem;
+    box-shadow: rgba(3, 0, 0, 0.7) 0px 2px 8px 0px;
+    transition: transform .7s ease-in-out;
+    transform: rotate(-6deg)
+}
+.oldPics:hover{
+    transform: rotate(1deg)
+}
+/*--------------About Us--------------*/
+
+/*--------------Menu--------------*/
+
+#menu{
+    background-color: #F2F0EA;
+}
+
+#menu .content_container .beverage-menu{
+    padding: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#menu .content_container .beverage-menu .category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beverage-menu .category .zoom button{
+    border-radius: 3rem;
+    font-weight: 100;
+    padding: 1rem 3rem;
+    margin: 0 1rem;
+    outline: none;
+    border: 1px solid;
+    color: #1E3832;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.beverage-menu .category .zoom button:hover,
+.beverage-menu .category .zoom .active{
+    letter-spacing: 1.3px;
+    background-color: #006140;
+    border-color:#006140;
+    color: #F9F9F9;
+}
+
+
+
+.beverage-items-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 2rem 0rem;
+}
+
+/*--menu picture resize--*/
+.card img{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
+/*--menu picture resize--*/
+
+.column{
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+}
+
+.card{
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: #1E3832 .5px solid;
+    transition: .5s ease-in-out;
+}
+.item-info div h3{
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+.card:hover{
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+.item-info div span{
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+
+.card .orderButton{
+    margin: 4px 0px;
+    padding: 2px 6px;
+}
+
+.orderButton a{
+    background-color: #006140;
+    padding: 3px 10px;
+    color: #F9F9F9;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 13px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: .3s ease-out;
+}
+
+.orderButton a:hover{
+    background-color: #1E3832;
+}
+
+.beverage-items-wrap>div{
+    display: none;
+}
+.beverage-items-wrap.all>div {
+    display: block;
+}
+
+.beverage-items-wrap.espresso>div.espresso {
+    display: block;
+}
+
+.beverage-items-wrap.frappuccino>div.frappuccino {
+    display: block;
+}
+
+.beverage-items-wrap.tea>div.tea {
+    display: block;
+}
+
+.beverage-items-wrap.cake>div.cake {
+    display: block;
+}
+/*--------------Menu--------------*/
+
+body{
+    background-color: #000000;
+}
+#about{
+    background-color: #F9F9F9;
+}
+
+/*--------------footer--------------*/
+.footer{
+    background-color: #000000;
+    color: #F9F9F9;
+}
+.footer h3{
+    padding: 10px 10px 10px 90px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.footer .content_container{
+    padding: 10px;
+}
+.footer .content_container .row{
+    line-height: 1.2;
+}
+
+.content_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: block;
+    width: 19rem;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.info span{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+/*--------------footer--------------*/
+
+/*--------------scroll effect--------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+

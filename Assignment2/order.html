@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Order Form" />
+	<meta name="author"      content="Thanh Tam Vo" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- (3) -->
+	<link rel="stylesheet" href="css/order_style.css">
+	<script src="js/order.js"></script>
+	<title>Order</title>
+</head>
+<body>
+    <!-- (4) -->
+    <!-- (3) Navigation bar -->
+    <div class="navigationBar">
+        <div class="menu-wrap">
+            <a href="#home" class="logo">
+                <div>
+                    DREAMY
+                </div>
+            </a>
+            <div class="menuNav">
+                <a href="index.html">
+                    <div class="nav-item">
+                        HOME
+                    </div>
+                </a>
+
+                <a href="register.html">
+                    <div class="nav-item">
+                        REGISTER
+                    </div>
+                </a>
+
+                <a href="order.html">
+                    <div class="nav-item active">
+                        ORDER
+                    </div>
+                </a>
+
+                <a href="features.html">
+                    <div class="nav-item">
+                        FEATURES
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!---->
+	<!-- (5) -->
+	<form id="regform" method="post" action=" http://mercury.ict.swin.edu.au/it000000/formtest.php">
+		<!-- (6) Delivery Type -->
+        <div class="firstSection">
+            <div class="deliveryType">
+                <h3>Delivery or Pick Up</h3>
+                <input id="deliver" type="radio" name="typeOfDeliver" value="deliver" onclick="enable()">
+                <label for="deliver" class="typeOfDelivery">Delivery</label>
+                <input id="pickup" type="radio" name="typeOfDeliver" value="pickup" onclick="disable()">
+                <label for="pickup" class="typeOfDelivery">Pick Up</label>
+            </div>
+    
+            <div class="address">
+                <label for="deliveryAddress">Address</label>
+                <br>
+                <input id="deliveryAddress" type="text" name="InputAddress" disabled=""/>
+            </div>
+    
+            <div class="billing">
+                <label for="billingAddress">Billing Address</label>
+                <br>
+                <input id="billingAddress" type="text" name="InputBillingAddress"/>
+    
+                <div>
+                    <input id="BillSameAddress" type="checkbox" name="same" onclick="sameAddress(); checkingFilledAddress(event);">
+                    <label for="BillSameAddress">Same as delivery address</label>
+                </div>
+            </div>
+    
+            <div class="contact">
+                <label for="number">Your number</label>
+                <br>
+                <input id="number" type="text" name="phoneNumber" placeholder="Please enter here"/>
+            </div>
+    
+            <div class="contact">
+                <label for="email">Your email</label>
+                <br>
+                <input id="email" type="text" name="emailReceipt" placeholder="Please enter here"/>
+            </div>
+        </div>
+        
+        <div class="secondSection">
+            <div class="PaymentMethod">
+                <h3>Payment Method</h3>
+                <input id="OnPickup" type="radio" name="typeOfPayment" value="OnPickup">
+                <label for="OnPickup" class="typeOfPayment">On Pick Up</label>
+                <input id="Online" type="radio" name="typeOfPayment" value="Online">
+                <label for="Online" class="typeOfPayment">Online</label>
+            </div>
+    
+            <div class="userdetails">
+                <div class="textinput" id="payment">
+                    <div>
+                            <label class="details" for="visa">Visa</label>
+                            <br>
+                            <input class="cardInput" id="visa" type="text"  placeholder="Enter your number">
+                    </div>
+                    <div>
+                        <label class="details" for="mastercard">Mastercard</label>
+                        <br>
+                        <input class="cardInput" id="mastercard" type="text"  placeholder="Enter your number">
+                    </div>
+                    <div>
+                        <label class="details" for="americanex">American Express</label>
+                        <br>
+                        <input class="cardInput" id="americanex" type="text"  placeholder="Enter your number">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttoninput">
+			<input type="submit" value="Submit" />
+		</div>
+	</form>
+
+    <script>
+        /*payment method*/
+   
+        $(document).ready(function(){
+            $("#Online").click(function(){
+                $("#payment").fadeIn();
+            }); 
+        });
+    
+        $(document).ready(function(){
+            $("#OnPickup").click(function(){
+                $("#payment").fadeOut();
+            });
+        });
+    
+    </script>
+</body>
+</html>

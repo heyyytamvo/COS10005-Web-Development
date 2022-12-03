@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+}
+/*---------article------------*/
+
+.article{
+    height: 100vh;
+    text-align: center;
+}
+
+/*---------article------------*/
+.top{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.top header {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content0{
+    font-size: 25px;
+}
+/*-----Movie content--------*/
+.middle1{
+    height: 71vh;
+}
+.middle1 header{
+    margin: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content1{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    
+}
+.box {
+    position: relative;
+    width: 20%;/*So that it will show 5 pics in one line */
+}
+.box img{
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.box:hover{
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.middle{
+    color: white;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0);
+    text-align: center;
+}
+
+
+.box:hover .middle{
+    opacity: 1;
+}
+
+
+/*-----Movie content--------*/
+
+/*---------marquee----------*/
+
+
+
+/*---------marquee----------*/
+
+/*---------music-----------*/
+.middle2{
+    position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.middle2 header{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.music{
+    font-size: 25px;
+}
+
+/*---------music-----------*/
+
+@media screen and (max-width:640px) {
+    /*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+}
+/*---------article------------*/
+
+.article{
+    height: 100vh;
+    text-align: center;
+}
+
+/*---------article------------*/
+.top{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.top header {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content0{
+    font-size: 25px;
+}
+/*-----Movie content--------*/
+.middle1{
+    height: 71vh;
+}
+.middle1 header{
+    margin: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content1{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    
+}
+.box {
+    position: relative;
+    width: 20%;/*So that it will show 5 pics in one line */
+}
+.box img{
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.box:hover{
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.middle{
+    color: white;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0);
+    text-align: center;
+}
+
+
+.box:hover .middle{
+    opacity: 1;
+}
+
+
+/*-----Movie content--------*/
+
+/*---------marquee----------*/
+
+
+
+/*---------marquee----------*/
+
+/*---------music-----------*/
+.middle2{
+    position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.middle2 header{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.music{
+    font-size: 25px;
+}
+  }

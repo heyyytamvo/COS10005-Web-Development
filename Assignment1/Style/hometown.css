@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* set position,color and center the whole page */
+.main{
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+}
+
+/*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+}
+
+/*---------Description-----------*/
+.Non-Parallax{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 0px 5px 30px 5px;
+}
+
+.Non-Parallax h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Non-Parallax p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 100%;
+    height: 90vh;
+}
+
+@media screen and (max-width:640px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    /* set position,color and center the whole page */
+    .main{
+        height: 100vh;
+        overflow-x: hidden;
+        color: white;
+    }
+    
+    /*--------navigation-----------*/
+    .navigation-menu{
+        position: relative;
+        padding: 0px 5px 0px 80px;
+        z-index: 999;
+        overflow:scroll;
+        background-color: black;
+    }
+    
+    .navigation-menu a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        margin: 20px 40px 20px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        z-index: 999;
+    }
+    
+    .navigation-menu a:hover{
+        color: #eb196e;
+    }
+    
+    /*---------Description-----------*/
+    .Non-Parallax{
+        position: relative;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-align: center;
+        background-color: white;
+        padding: 0px 5px 30px 5px;
+    }
+    
+    .Non-Parallax h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .Non-Parallax p{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    img{
+        width: 100%;
+        height: 90vh;
+    }
+}

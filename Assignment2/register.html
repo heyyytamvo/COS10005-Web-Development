@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="REGISTER Form" />
+	<meta name="author"      content="Thanh Tam Vo" />
+	<!-- (3) -->
+	<link rel="stylesheet" href="css/register_style.css">
+	<script src="js/register.js"></script>
+	<title>Register</title>
+</head>
+<body>
+    <!-- (4) -->
+    <!-- (3) Navigation bar -->
+    <div class="navigationBar">
+        <div class="menu-wrap">
+            <a href="#home" class="logo">
+                <div>
+                    DREAMY
+                </div>
+            </a>
+            <div class="menuNav">
+                <a href="index.html">
+                    <div class="nav-item">
+                        HOME
+                    </div>
+                </a>
+
+                <a href="register.html">
+                    <div class="nav-item active">
+                        REGISTER
+                    </div>
+                </a>
+
+                <a href="order.html">
+                    <div class="nav-item">
+                        ORDER
+                    </div>
+                </a>
+
+                <a href="features.html">
+                    <div class="nav-item">
+                        FEATURES
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!---->
+	<!-- (5) -->
+
+    <div class="login-box">
+        <form id="regform" method="post" action="http://mercury.ict.swin.edu.au/it000000/formtest.php">
+            <div class="user-box">
+                <input class="inputAnimation" id="userNameID" type="text" name="UserName" required/>
+                <label class="labelAnimation" for="userNameID">User Name</label>
+            </div>
+              
+              <div class="user-box">
+                <input class="inputAnimation" id="passwordID" type="password" name="password" required>
+                <label class="labelAnimation" for="passwordID">Enter password</label>
+              </div>
+    
+              <div class="user-box">
+                <input class="inputAnimation" id="rePasswordID" type="password" name="ReTypePassword" required>
+                <label class="labelAnimation" for="rePasswordID">Enter your password again</label>
+              </div>
+    
+              <div class="user-box">
+                <input class="inputAnimation" id="postCodeID" type="text" name="postCode" required>
+                <label class="labelAnimation" for="postCodeID">Your postcode</label>
+              </div>
+    
+              <div class="user-box genderBox">
+                <input id="maleID" type="radio" name="gender" value="male">
+                <label for="maleID">Male</label>
+                <input id="femaleID" type="radio" name="gender" value="female">
+                <label for="femaleID">Female</label>
+              </div>
+    
+              <div class="user-box survey">
+                <label>What is your favourite drink</label>
+                <select name="drink" id="favouDrink">
+                    <option value="Espresso">Espresso</option>
+                    <option value="Frappuccino">Frappuccino</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Other">Other</option>
+                  </select>
+              </div>
+    
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              
+              <div class="buttoninput">
+                <input type="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

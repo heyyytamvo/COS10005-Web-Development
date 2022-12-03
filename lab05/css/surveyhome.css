@@ -1,0 +1,85 @@
+/*--------setting for the LOGO--------*/
+.logo{
+    float: left;
+    color: white;
+    background-color: navy;
+}
+
+/*--------setting for the Navigator--------*/
+nav{
+    float: left;
+    background-color: darkgray;
+}
+
+li{
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    float: left;
+    width: 96px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    border-right: 1px solid white;
+
+}
+/*--------setting background when mouse hover a tag--------*/
+
+a:hover{
+    background-color: brown;
+
+}
+
+
+/*--------setting for the main content--------*/
+.mainContent{
+    float: left;
+}
+
+article{
+    color: black;
+    background-color: lightgray;
+    width: auto;
+    height: auto;
+    box-shadow: 3px 3px 3px 2px;
+}
+
+article h2{
+    box-shadow: 2px 2px 2px;
+}
+/*--------setting for the ads sidebar--------*/
+.AdsSidebar{
+    float: right;
+}
+/*--------setting for the footer--------*/
+footer{
+    float: none;
+    clear: both;
+    color: white;
+    background-color: lightblue;
+}
+
+/*--------setting for the main tag--------*/
+main{
+    float: left;
+    width: 65%;
+}
+
+/*--------setting for the aside tag--------*/
+aside{
+    float: left;
+    width: 30%;
+    font-size: 8px;
+    font-style: italic;
+    color: green;
+}
+
+.Ads{
+    background-color: lightblue;
+}

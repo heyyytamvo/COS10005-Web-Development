@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Thanh Tam Vo" />
+    
+    
+     <!--install script for picture-->
+     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+	<title>Assignment 1</title>
+    <link rel="stylesheet" href="Style/hometown.css">
+</head>
+    
+<body>
+<!--header-->
+<div class="navigation-menu">
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutMe.html">About</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href ="animation.html">Animation</a></li>
+            <li><a href="survey.html">Survey</a></li>
+        </ul>
+     </nav>
+</div>
+<section>
+    <div class="Non-Parallax">
+        <h1>
+            Vinh Long City
+        </h1>
+        <p>
+            Vinh Long city which is the capital of Vinh Long Province, which branches out from the Mekong River at the narrows of My Thuan about 10 kilometres (6.2 mi) upstream, only to meet it later downstream.
+        </p>
+    </div>
+
+    <div class ="parallaxBg">
+        <img src="picture/VLcity.jpeg" alt="Vinh Long city" class="VinhLongClass">
+    </div>
+<!--------------------------------->
+<div class="Non-Parallax">
+    <h1>
+        My Thuan Bridge
+    </h1>
+    <p>
+        My Thuan Bridge  is a cable-stayed bridge over the Mekong river. Also, it is the largest overseas assistance project undertaken by the Australian government costing A$91 million.
+    </p>
+</div>
+
+<div class ="parallaxBg">
+    <img src="picture/MTbridge.jpeg" alt="My Thuan Bridge" class="MyThuanClass">
+</div>
+<!--------------------------------->
+<div class="Non-Parallax">
+    <h1>
+        Nguyen Binh Khiem Highschool for the Gifted
+    </h1>
+    <p>
+        Founded in 1992, Nguyen Binh Khiem high school is located in Vinh Long City which is famous for its traditional fondness for learning. The school is specialized for gifted students who show their talents in academic fields such as natural science, social science as well as foreign languages.
+    </p>
+</div>
+
+<div class ="parallaxBg">
+    <img src="picture/nbk.jpeg" alt="Nguyen Binh Khiem Highschool" class="NBKClass">
+</div>
+<!--------------------------------->
+    
+</section>
+<!--install script for picture-->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+<script>
+    var image1 = document.getElementsByClassName('VinhLongClass'); 
+    var image2 = document.getElementsByClassName('MyThuanClass'); 
+    var image3 = document.getElementsByClassName('NBKClass'); 
+    
+    
+    new simpleParallax(image1, {
+        orientation:'up'
+        
+    });
+    
+    new simpleParallax(image2, {
+        orientation:'down'
+        
+    });
+    
+    new simpleParallax(image3, {
+        orientation:'up'
+        
+    });
+    
+</script>
+</body>
+</html>

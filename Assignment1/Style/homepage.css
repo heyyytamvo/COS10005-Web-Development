@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* set position,color and center the whole page */
+.main{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 100px 80px;
+    color: #fff;
+}
+
+.container {
+    padding: 50px 10px 100px;
+}
+
+.name h2{
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: .01em;
+    font-weight: 400;
+}
+
+.generalDescription{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.MeDescription{
+    margin-bottom: 40px;
+}
+
+.MeDescription h3{
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+
+.link{
+    font-weight: 400;
+    color: #eb196e;
+}
+
+.link:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    color: #eb196e;
+}
+
+/*---------learn more button---------*/
+
+.linkMore{
+    font-weight: 400;
+    color: #eb196e;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.linkMore::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #eb196e;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+
+
+/*---------learn more button---------*/
+
+/*--------navigation-----------*/
+.navigation-menu{
+    position: relative;
+    padding: 0px 5px 0px 80px;
+    z-index: 999;
+    overflow:scroll;
+    background-color: black;
+}
+
+.navigation-menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 40px 20px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 999;
+}
+
+.navigation-menu a:hover{
+    color: #eb196e;
+
+}
+
+
+/*-------video----------*/
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+}
+
+/*-------video----------*/
+
+
+@media screen and (max-width:640px) {
+    /* set position,color and center the whole page */
+    .main{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 150vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigation-menu{
+    overflow: hidden;
+    background-color: #333;
+}
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .linkMore:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
